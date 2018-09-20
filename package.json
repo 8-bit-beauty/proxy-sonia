@@ -1,0 +1,24 @@
+{
+  "name": "proxy-sonia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/8-bit-beauty/proxy-sonia.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/8-bit-beauty/proxy-sonia/issues"
+  },
+  "homepage": "https://github.com/8-bit-beauty/proxy-sonia#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "nodemon": "^1.18.4"
+  }
+}

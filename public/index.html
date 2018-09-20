@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/style.css">
+    <title>FEC Demo</title>
+  </head>
+  <body>
+    
+    <div id="ProductInfo"></div> 
+    <div id="Checkout"></div> 
+    <div id="Reviews"></div>
+    <div id="relatedItems"></div> 
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> 
+    <script src="/lib/react.development.js"></script>
+    <script src="/lib/react-dom.development.js"></script>
+
+    <script src="https://s3-us-west-1.amazonaws.com/avh-fec-component/bundle.js"></script>
+    <script src="https://s3-us-west-1.amazonaws.com/mattminwoolee-checkout/bundle/bundle.js"></script> 
+    <script src="https://s3.amazonaws.com/fec-proxy/bundle.js"></script>
+    <script src="https://s3-us-west-1.amazonaws.com/parmezon/bundle.js"></script>
+    <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
+    <script>
+      // ReactDOM.render(
+      //   React.createElement(Reviews),
+      //   document.getElementById('Reviews')
+      // );
+      ReactDOM.render(
+        React.createElement(Checkout),
+        document.getElementById('Checkout')
+      );
+      ReactDOM.render(
+        React.createElement(relatedItems),
+        document.getElementById('relatedItems')
+      );
+      ReactDOM.render(
+        React.createElement(ProductInfo),
+        document.getElementById('ProductInfo')
+      );
+    </script>
+  </body>
+</html>
