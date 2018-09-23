@@ -37,7 +37,7 @@ app.get('/api/helpful/:productId', (req, res) => {
     .then(json => res.status(202).send());
 });
 app.get('/api/products/', (req, res) => {
-  fetch(`http://ec2-13-57-32-246.us-west-1.compute.amazonaws.com/get?id=${req.query.id}`)
+  fetch(`http://ec2-13-57-36-38.us-west-1.compute.amazonaws.com:3004/get?id=${req.query.id}`)
     .then(response => {
       return response.json()
     }).then(json => {
